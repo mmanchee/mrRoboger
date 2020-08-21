@@ -53,58 +53,58 @@ body {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 20px 0 20px 20px;
-  background-color: rgb(207, 179, 190);
+  background-color: rgb(228, 211, 218);
   margin-bottom: 20px;
 }
 
-.saying1 {
-  font-weight: 700;
-  font-size: 30px;
-}
-.saying2 {
-  font-weight: 900;
-  font-style: italic;
-  color: grey;
-  font-family: cursive;
-}
-.saying3 {
-  font-weight: 600;
-  font-stretch: extra-condensed;
-  color: darkgreen;
-  font-family: 'Courier New', Courier, monospace;
-}
-.saying4 {
-  font-weight: 900;
-  font-style: italic;
-  color: green;
+.rText1 {
   font-family: serif;
 }
-.saying5 {
-  font-weight: 400;  
-  font-stretch: extra-expanded;
-  color: black;
+.rText2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+.rText3 {
+  font-family: fantasy;
+}
+.rText4 {
   font-family: sans-serif;
 }
-.saying6 {
-  font-weight: 700;
-  font-size: 20px;
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-}
-.saying7 {
-  font-weight: 900;
-  font-style: italic;
-  color: blue;
-  font-family: 'Courier New', Courier, monospace;
-}
-.saying8 {
-  font-weight: 600;
-  color: green;
-  font-family: 'Courier New', Courier, monospace;
-}
-.saying9 {
-  font-weight: 600;
-  font-style: oblique;
-  color: red;
+.rText5 {
   font-family: 'Times New Roman', Times, serif;
+}
+.rStyle1 {
+  font-weight: 700;
+  font-size: 30px;
+  font-style: italic;
+}
+.rStyle2 {
+  font-weight: 900;
+  font-style: oblique;
+}
+.rStyle3 {
+  font-weight: 600;
+  font-stretch: extra-expanded;
+}
+.rStyle4 {
+  font-weight: 900;
+  font-stretch: extra-condensed;
+}
+.rStyle5 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.rColor1 {
+  color: red;  
+}
+.rColor2 {
+  color: green;  
+}
+.rColor3 {
+  color: blue;  
+}
+.rColor4 {
+  color: black;  
+}
+.rColor5 {
+  color: rgb(133, 117, 28);
 }

@@ -2,7 +2,9 @@
 function robotics(input) {
   let robotArray = "";
   let indexOutput;
-  let cssInject;
+  let css1;
+  let css2;
+  let css3;
   
   for (let i = 0; i <= input; i++) {    
     if (/[3]+/g.test(i)) {              // Test 5 
@@ -16,11 +18,12 @@ function robotics(input) {
     }
 
     // robotArray.push(indexOutput);       // Test 2
-
-    cssInject = Math.floor(Math.random() * 10);
-    robotArray = robotArray + "<span class=saying" + cssInject + ">" + indexOutput; + "</span>";
+    css1 = Math.ceil(Math.random() * 5);
+    css2 = Math.ceil(Math.random() * 5);
+    css3 = Math.ceil(Math.random() * 5);
+    robotArray = robotArray + "<span class=rStyle" + css1 + "><span class=rText" + css2 + "><span class=rColor" + css3 + ">" + indexOutput; + "</span></span></span>";
   }
-
+  
   return robotArray;
 }
 
