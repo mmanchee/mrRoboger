@@ -20,7 +20,7 @@ function robotics(input) {
     cssInject = Math.floor(Math.random() * 10);
     robotArray = robotArray + "<span class=saying" + cssInject + ">" + indexOutput; + "</span>";
   }
-  robotArray = "<div class=row><div class=col-5 float-left><div class=card ><div class=card-back>" + robotArray + "</div></div></div></div";
+  robotArray = "<div class=row><div class=card ><div class=card-back>" + robotArray + "</div></div></div";
   return robotArray;
 }
 
@@ -30,13 +30,16 @@ $(document).ready(function() {
     event.preventDefault();
     let input1 = $("input#input1").val();
     let result1;
+    let result1a;
 
     if (isNaN(input1)) {                // Test 1
       result1 = "Mr. Roboger can only receive numbers.";
     } else {
       result1 = robotics(parseInt(input1));
+      result1a = "<div class=row><div class=card ><div class=card-back>" + input1 + "</div></div></div";
     };
 
     $("#result1").html(result1);
+    $("#result1a").html(result1a);
   });
 });
