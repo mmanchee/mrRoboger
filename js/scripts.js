@@ -36,7 +36,7 @@ $(document).ready(function() {
     let resultRobot;
     let resultUser;
 
-    if (isNaN(input1)) {                // Test 1
+    if (isNaN(input1) || input1 === "") {                // Test 1
       botAnswer = "<strong>**ERROR** **ERROR** ...</strong> Mr. Roboger can only receive numbers.";
     } else {
       botAnswer = robotics(parseInt(input1));
