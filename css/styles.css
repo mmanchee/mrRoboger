@@ -1,11 +1,51 @@
 .saying1 {
   font-weight: 700;
+  font-size: 30px;
 }
-
 .saying2 {
   font-weight: 900;
+  font-style: italic;
+  color: grey;
+  font-family: cursive;
 }
-
 .saying3 {
   font-weight: 600;
+  font-stretch: extra-condensed;
+  color: darkgreen;
+  font-family: 'Courier New', Courier, monospace;
+}
+.saying4 {
+  font-weight: 900;
+  font-style: italic;
+  color: green;
+  font-family: serif;
+}
+.saying5 {
+  font-weight: 400;  
+  font-stretch: extra-expanded;
+  color: black;
+  font-family: sans-serif;
+}
+.saying6 {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+.saying7 {
+  font-weight: 900;
+  font-style: italic;
+  color: blue;
+  font-family: 'Courier New', Courier, monospace;
+}
+.saying8 {
+  font-weight: 600;
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+}
+.saying9 {
+  font-weight: 600;
+  font-style: oblique;
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
 }

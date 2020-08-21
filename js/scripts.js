@@ -1,23 +1,26 @@
 // Business Logic
 function robotics(input) {
-  let robotArray; // = [];
+  let robotArray = "";
   let indexOutput;
+  let cssInject;
   
   for (let i = 0; i <= input; i++) {    
     if (/[3]+/g.test(i)) {              // Test 5 
-      indexOutput = " <span class='saying3'>Won't you be my neighbor?";
+      indexOutput = " W0n't you b3 my n3ighb0r?";
     } else if (/[2]+/g.test(i)) {       // Test 4
-      indexOutput = " <span class='saying2'>Boop!</span>";
+      indexOutput = " B00p!";
     } else if (/[1]+/g.test(i)) {       // Test 3
-      indexOutput = " <span class='saying1'>Beep!</span>";
+      indexOutput = " B33p!";
     } else {
       indexOutput = " " + i;
     }
-    cssInject = Math.
-    robotArray = robotArray + "<span class=saying" +  + ">" + indexOutput; + "</span>";
+
     // robotArray.push(indexOutput);       // Test 2
+
+    cssInject = Math.floor(Math.random() * 10);
+    robotArray = robotArray + "<span class=saying" + cssInject + ">" + indexOutput; + "</span>";
   }
-  
+  robotArray = "<div class=row><div class=col-5 float-left><div class=card ><div class=card-back>" + robotArray + "</div></div></div></div";
   return robotArray;
 }
 
