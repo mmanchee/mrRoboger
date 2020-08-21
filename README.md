@@ -9,7 +9,10 @@
 Takes user input and converts it to Robotics for Mr Roboger. Outputs Mr. Roboger's responce.
 
   #### TDD
-    ##### Specs                                                                           
+    ##### Specs 
+    [x] - Handle all NaN inputs
+          Input: "hello"
+          Output: "Mr. Roboger can only receive numbers."
     [x] - The program returns a range of numbers from 0 to the users input.
           Input: "4"
           Output: "0, 1, 2, 3, 4"
