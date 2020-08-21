@@ -3,7 +3,9 @@ function robotics(input) {
   let test;
   
   for (let i = 0; i <= input; i++) {
-    if (/[1]+/g.test(i)) {
+    if (/[2]+/g.test(i)) {
+      test = "Boop!";
+    } else if (/[1]+/g.test(i)) {
       test = "Beep!";
     } else {
       test = i;

@@ -16,7 +16,7 @@ Takes user input and converts it to Robotics for Mr Roboger. Outputs Mr. Roboger
     [x] - If user input contains a 1, replace index with "Beep!".
           Input: "12"
           Output: "0, Beep!, 2, 3 ... Beep!, Beep!, Beep!"
-    [] - If user input contains a 2, replace index with "Boop!" and if input contains both 1 and 2. 2 will supersede 1.
+    [x] - If user input contains a 2, replace index with "Boop!" and if input contains both 1 and 2. 2 will supersede 1.
           Input: "12"
           Output: "0, Beep!, Boop!, 3 ... Beep!, Beep!, Boop!"      
 
