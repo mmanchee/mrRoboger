@@ -20,26 +20,29 @@ function robotics(input) {
     cssInject = Math.floor(Math.random() * 10);
     robotArray = robotArray + "<span class=saying" + cssInject + ">" + indexOutput; + "</span>";
   }
-  robotArray = "<div class=row><div class=card ><div class=card-back>" + robotArray + "</div></div></div";
+
   return robotArray;
 }
 
 // Interface Logic
 $(document).ready(function() {
-  $("#robot-form").submit(function(event) {
+  $("#input-submit").click(function(event) {
     event.preventDefault();
     let input1 = $("input#input1").val();
-    let result1;
-    let result1a;
+    let botAnswer;
+    let resultRobot;
+    let resultUser;
 
     if (isNaN(input1)) {                // Test 1
-      result1 = "Mr. Roboger can only receive numbers.";
+      botAnswer = "<strong>**ERROR** **ERROR** ...</strong> Mr. Roboger can only receive numbers.";
     } else {
-      result1 = robotics(parseInt(input1));
-      result1a = "<div class=row><div class=card ><div class=card-back>" + input1 + "</div></div></div";
+      botAnswer = robotics(parseInt(input1));
     };
+    resultRobot = "<div class=col-6><div class=card><div class=card-body><h5 class=card-title>Mr. Roboger:</h5>" + botAnswer + "</div></div></div>";
+    resultUser = "<div class=col-6><div class=card><div class=card-body><h5 class=card-title>You:</h5>" + input1 + "</div></div></div>";
 
-    $("#result1").html(result1);
-    $("#result1a").html(result1a);
+    let convo = "<div class=row mt-4>" + resultUser + resultRobot + "</div>";
+
+    $("#result1").prepend(convo);
   });
 });
