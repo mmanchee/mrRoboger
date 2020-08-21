@@ -19,9 +19,9 @@ Takes user input and converts it to Robotics for Mr Roboger. Outputs Mr. Roboger
     [x] - If user input contains a 2, replace index with "Boop!" and if input contains both 1 and 2. 2 will supersede 1.
           Input: "12"
           Output: "0, Beep!, Boop!, 3 ... Beep!, Beep!, Boop!" 
-    [] - If user input contains a 3, replace index with "Won't you be my neighbor!" and if input contains (1 or 2) and 3. 3 will supersede them both.
+    [x] - If user input contains a 3, replace index with "Won't you be my neighbor?" and if input contains (1 or 2) and 3. 3 will supersede them both.
           Input: "13"
-          Output: "0, Beep!, Boop!, Won't you be my neighbor!, 4 ... Beep!, Boop!, Won't you be my neighbor!" 
+          Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4 ... Beep!, Boop!, Won't you be my neighbor?" 
 
 
 ## Setup/Installation Requirements
