@@ -11,19 +11,24 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Welcome Neighbor</h1>
-      <h2>Say hello to Mr. Roboger!</h2>
+    <div class="header">
+      <img src="img/neighborhoodsm.jpg" id="header-img">
+      <div id="title1" class="title-text">Welcome Neighbor,</div>
+      <div id="title2" class="title-text">Say hello to Mr. Roboger!</div>
     </div>
     <div class="form-group">
       <label class="input1">Enter any number</label>
-      <input id="input1" type="text" class="form-control">
+      <input id="input1" type="text" class="form-control mb-3">
+      <button type="submit" id="input-submit" class="btn btn-info">Robotics</button>
+      <button class="btn btn-info" onClick="window.location.reload();">Clear Chat</button>
     </div>
-    <button type="submit" id="input-submit" class="btn btn-info">Robotics</button>
-    <button class="btn btn-info" onClick="window.location.reload();">Clear Chat</button>
     <div>
-      <div class="col-9 float-right">
+      
+      <div class="col-9 float-left">
         <div id="result1"></div>
+      </div>
+      <div class="col-3 float-right">
+        <img src="img/mrRobotsm.jpg" id="mr-robot">
       </div>
     </div>
   </div>

@@ -38,10 +38,10 @@ $(document).ready(function() {
     } else {
       botAnswer = robotics(parseInt(input1));
     };
-    resultRobot = "<div class=col-6><div class=card><div class=card-body><h5 class=card-title>Mr. Roboger:</h5>" + botAnswer + "</div></div></div>";
-    resultUser = "<div class=col-6><div class=card><div class=card-body><h5 class=card-title>You:</h5>" + input1 + "</div></div></div>";
+    resultRobot = "<div class=col-6><div class=bot><div class=card-body><h5 class=card-title>Mr. Roboger:</h5>" + botAnswer + "</div></div></div>";
+    resultUser = "<div class=col-6><div class=user><div class=card-body><h5 class=card-title>You:</h5>" + input1 + "</div></div></div>";
 
-    let convo = "<div class=row mt-4>" + resultUser + resultRobot + "</div>";
+    let convo = "<div class=row>" + resultUser + resultRobot + "</div>";
 
     $("#result1").prepend(convo);
   });

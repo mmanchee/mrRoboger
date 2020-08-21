@@ -1,3 +1,61 @@
+body {
+  background-color: rgb(223, 196, 79);
+}
+.header {
+  position: relative;
+  text-align: center;
+}
+#header-img {
+  width: 95%;
+  border-radius: 0 0 20px 20px;
+}
+#title1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#title2 {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.title-text {
+  font-weight: 900;
+  font-size: 60px;
+  color: white;
+  font-style: italic;
+  font-family: cursive;
+  border: black;
+  text-shadow: -1px 10px black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.form-group {
+  width: 90%;
+  margin-left: 5%; 
+}
+#mr-robot {
+  width: 95%;
+  border-radius: 30px;
+}
+
+.user {
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0 20px 20px 20px;
+  background-color: rgb(187, 223, 223);
+  margin-bottom: 20px;
+}
+
+.bot {
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 20px 0 20px 20px;
+  background-color: rgb(207, 179, 190);
+  margin-bottom: 20px;
+}
 
 .saying1 {
   font-weight: 700;
