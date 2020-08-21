@@ -10,10 +10,13 @@ Takes user input and converts it to Robotics for Mr Roboger. Outputs Mr. Roboger
 
   #### TDD
     ##### Specs                                                                           
-    [] - The program returns a range of numbers from 0 to the users input.
+    [x] - The program returns a range of numbers from 0 to the users input.
           Input: "4"
           Output: "0, 1, 2, 3, 4"
-          
+    [] - If user input contains a 1, replace index with "Beep!".
+          Input: "12"
+          Output: "0, Beep!, 2, 3 ... Beep!, Beep!, Beep!"
+
 ## Setup/Installation Requirements
 
 * Download files
