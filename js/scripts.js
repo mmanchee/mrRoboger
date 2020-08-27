@@ -23,8 +23,25 @@ function robotics(input) {
     css3 = Math.ceil(Math.random() * 5);
     robotArray = robotArray + "<span class=rStyle" + css1 + "><span class=rText" + css2 + "><span class=rColor" + css3 + ">" + indexOutput; + "</span></span></span>";
   }
-  
   return robotArray;
+}
+
+function reply(input) {
+  let botAnswer;
+  let resultRobot;
+  let resultUser;
+
+  if (isNaN(input) || input === "") {                // Test 1
+    botAnswer = "<strong>**ERROR** **ERROR** ...</strong> Mr. Roboger can only receive numbers.";
+  } else {
+    botAnswer = robotics(parseInt(input));
+  };
+  resultRobot = "<div class=col-6><div class=bot><div class=card-body><h5 class=card-title>Mr. Roboger:</h5>" + botAnswer + "</div></div></div>";
+  resultUser = "<div class=col-6><div class=user><div class=card-body><h5 class=card-title>You:</h5>" + input + "</div></div></div>";
+
+  let convo = "<div class=row>" + resultUser + resultRobot + "</div>";
+
+  return convo;
 }
 
 // Interface Logic
@@ -32,20 +49,9 @@ $(document).ready(function() {
   $("#input-submit").click(function(event) {
     event.preventDefault();
     let input1 = $("input#input1").val();
-    let botAnswer;
-    let resultRobot;
-    let resultUser;
+    
+    let conversation = reply(input1);
 
-    if (isNaN(input1) || input1 === "") {                // Test 1
-      botAnswer = "<strong>**ERROR** **ERROR** ...</strong> Mr. Roboger can only receive numbers.";
-    } else {
-      botAnswer = robotics(parseInt(input1));
-    };
-    resultRobot = "<div class=col-6><div class=bot><div class=card-body><h5 class=card-title>Mr. Roboger:</h5>" + botAnswer + "</div></div></div>";
-    resultUser = "<div class=col-6><div class=user><div class=card-body><h5 class=card-title>You:</h5>" + input1 + "</div></div></div>";
-
-    let convo = "<div class=row>" + resultUser + resultRobot + "</div>";
-
-    $("#result1").prepend(convo);
+    $("#result1").prepend(conversation);
   });
 });
