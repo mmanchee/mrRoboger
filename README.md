@@ -4,9 +4,11 @@
 
 #### By _**Mike Manchee**_
 
+#### Published at: [Mr. Roboger's](https://mmanchee.github.io/mrRoboger/)
+
 ## Description
 
-Takes user input and converts it to Robotics for Mr Roboger. Outputs Mr. Roboger's responce.
+Takes user input and converts it to Robotics for Mr Roboger. Outputs Mr. Roboger's response.
 
   #### TDD
     
@@ -36,7 +38,7 @@ Takes user input and converts it to Robotics for Mr Roboger. Outputs Mr. Roboger
 
 * Download files
 * Place all files and folders into one directory
-* Open Index.html in perferred browser
+* Open Index.html in preferred browser
 * Enjoy talking to Mr. Roboger
 
 ## Known Bugs
@@ -57,4 +59,4 @@ No known bugs
 ### License
 
 Copyright (c) 2020 **_Mike Manchee_**
-Licenced under MIT
+Licensed under MIT
